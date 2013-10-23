@@ -57,7 +57,7 @@ public class MainActivity extends Activity {
     	
     	Runnable runnable = new Runnable() {
     	
-    		private int submitVote() {
+    		private int submitData() {
     			
     			int httpStatus = 400;
     			
@@ -97,7 +97,7 @@ public class MainActivity extends Activity {
     		}
     		
 	        public void run() {
-	        	int httpStatus = submitVote();
+	        	int httpStatus = submitData();
 	        	
 	        	Message msg = handler.obtainMessage();
     			Bundle bundle = new Bundle();
